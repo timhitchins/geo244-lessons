@@ -1,0 +1,188 @@
+<!--declaration defines this document to be HTML5-->
+<!DOCTYPE html>
+
+<!-- The <html> element is the root element of an HTML page -->
+<html>
+  <!-- The <head> element contains meta information about the document -->
+  <head>
+    <!-- The <meta> element provide metadata.  Here we are using the utf-8 character set -->
+    <meta charset="utf-8" />
+    <!-- The <title> element specifies a title for the document -->
+    <title>HTML Introduction</title>
+
+    <!-- This is how I load my internal css -->
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+
+    <!-- This is how to load external css -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Sigmar+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- This is external js -->
+    <script type="text/javascript" src="./js/demo.js"></script>
+  </head>
+  <!-- The <body> element contains the visible page content -->
+  <body>
+    <!-- This is interal styling -->
+    <style>
+      .my-class {
+        font-size: 30px;
+      }
+    </style>
+
+    <h1>Lesson 1</h1>
+    <p><i>Introduction to HTML</i></p>
+
+    <h3>Resources</h3>
+    <p>Resources for this introduction can be found on:</p>
+
+    <ul>
+      <li>
+        <a href="https://www.w3schools.com/html/default.asp"
+          >W3 Schools HTML Tutorial</a
+        >
+      </li>
+
+      <li>
+        <a href="https://www.w3schools.com/tags/default.asp"
+          >W3 Schools HTML Tag List</a
+        >
+      </li>
+    </ul>
+
+    <h2>What is HTML?</h2>
+    <p>
+      HTML (Hypertext Markup Language) is not a programming language; it is a
+      markup language used to tell your browser how to structure the web pages
+      you visit.
+      <small
+        >source:
+        <a
+          href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started"
+          >MDN</a
+        ></small
+      >
+    </p>
+    <hr />
+
+    <!-- Basic HTML -->
+    <h2>Basic HTML</h2>
+
+    <h1>Heading 1</h1>
+
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <p>I am a paragraph.</p>
+
+    <p>
+      I am a paragraph with a <br />
+      line break
+    </p>
+
+    <hr />
+
+    <h2>Formatting</h2>
+
+    <p>I love <abbr>SCUBA</abbr></p>
+
+    <p>This is what <strong>bold looks like</strong>.</p>
+
+    <p>This is in <i>italics</i>.</p>
+
+    <p>This is <small>small</small>.</p>
+
+    <hr />
+
+    <h2>Frames</h2>
+
+    <iframe width="500" height="500" src="./html/second.html"></iframe>
+
+    <!-- Note CORS is an issue for external pages.  https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS-->
+    <iframe
+      width="500"
+      height="500"
+      src="https://www.w3schools.com/tags/ref_byfunc.asp"
+    ></iframe>
+
+    <hr />
+
+    <h2>Lists</h2>
+
+    <h3>Ordered list:</h3>
+    <ul>
+      <li>milk</li>
+      <li>eggs</li>
+      <li>bread</li>
+      <li>hummus</li>
+    </ul>
+
+    <h3>Unordered list:</h3>
+    <ol>
+      <li>Drive to the end of the road</li>
+      <li>Turn right</li>
+      <li>Go straight across the first two roundabouts</li>
+      <li>Turn left at the third roundabout</li>
+      <li>The school is on your right, 300 meters up the road</li>
+    </ol>
+
+    <hr />
+
+    <h2>Forms and Inputs</h2>
+
+    <h3>Radio buttons</h3>
+    <form>
+      <input type="radio" name="gender" value="male" checked /> Hi<br />
+      <input type="radio" name="gender" value="female" /> Bye<br />
+      <input type="radio" name="gender" value="other" /> Other
+    </form>
+
+    <h3>A simple button</h3>
+    <button onclick="sayHello()">Click me to say hello!</button>
+
+    <hr />
+
+    <h2>Images</h2>
+
+    <h3>Internal image</h3>
+    <img
+      src="./assets/smiley.jpg"
+      width="300"
+      height="152"
+      alt="person making a stupid smiley face"
+    />
+
+    <h3>External Image</h3>
+    <img
+      src="https://acdn.list25.com/wp-content/uploads/2016/01/puns-feature-300x152.jpg"
+      alt="person making a stupid smiley face"
+    />
+
+    <hr />
+
+    <h2>Style</h2>
+
+    <h3>Block element with style</h3>
+    <div class="my-class">Div 1</div>
+    <div class="my-class">Div 2</div>
+    <div class="my-class">Div 3</div>
+    <div id="my-id">I am a loney div.</div>
+
+    <h3>Block element with style</h3>
+    <p>
+      This is a paragragh with <span class="my-class">some larger text</span>
+    </p>
+
+    <hr />
+
+    <h2>Programming</h2>
+    <!-- This is internal javaScript loaded at the end of the body.-->
+    <script>
+      document.getElementById("my-id").style.color = "blue";
+    </script>
+  </body>
+</html>
