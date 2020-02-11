@@ -1,0 +1,24 @@
+img {
+  border: 5px solid darkblue;
+  /*   width: 100px; */
+  width: 10%;
+}
+
+.inner-box {
+  border: 5px solid red;
+  height: 25%;
+  width: 75%;
+/*   width: 20vw; */
+/*   height: 20vh; */
+}
+
+.outer-box {
+  border: 5px dashed green;
+
+  /*   height: 250px; */
+  /*   width: 100%; */
+  /*   max-width: 600px; */
+  width: 20vw;
+  height: 20vh;
+  font-size: 10vh;
+}

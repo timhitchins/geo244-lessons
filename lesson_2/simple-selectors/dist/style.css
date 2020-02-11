@@ -1,0 +1,30 @@
+/*  Universal selector*/
+* {
+  font-family: sans-serif;
+}
+
+/* element */
+p {
+  color: blue;
+}
+/* id */
+#para1 {
+  color: red;
+}
+
+/* class */
+.center {
+  text-align: center;
+}
+
+/* element with class */
+h1.center {
+  color: red;
+}
+
+/* Grouping */
+h1,
+h2,
+p {
+  text-decoration: underline;
+}

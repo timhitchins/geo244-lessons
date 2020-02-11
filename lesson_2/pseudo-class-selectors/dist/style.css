@@ -1,0 +1,42 @@
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+
+/* hover over div */
+.button {
+  background-color: green;
+  color: white;
+  padding: 25px;
+  text-align: center;
+}
+
+div:hover {
+  background-color: blue;
+}
+
+/*  simple tooltip*/
+h1 {
+  display: none;
+  background-color: red;
+  padding: 20px;
+}
+
+div:hover h1 {
+  display: block;
+}

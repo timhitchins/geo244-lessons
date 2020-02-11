@@ -1,0 +1,20 @@
+.shorthand {
+  margin: 0 200px 25px 100px;
+  /*   margin: 10px; */
+  padding: 0 200px 25px 100px;
+  /*   padding: 10px; */
+  border: 3px solid red;
+}
+
+.longer {
+  margin-top: 0;
+  margin-right: 200px;
+  margin-bottom: 25px;
+  margin-left: 100px;
+
+  padding-top: 0;
+  padding-right: 200px;
+  padding-bottom: 25px;
+  padding-left: 100px;
+  border: 3px solid black;
+}

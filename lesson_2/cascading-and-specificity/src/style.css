@@ -1,0 +1,11 @@
+/* This is a CSS comment
+Note the external CSS is loaded by default in codepen. 
+*/
+
+body {
+  background: #00FFFF;
+}
+
+h1 {
+  color: navy;
+}

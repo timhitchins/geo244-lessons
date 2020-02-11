@@ -1,0 +1,9 @@
+.overflow {
+  margin: 0 auto;
+  width: 200px;
+  height: 100px;
+  border: 3px solid orange;
+  overflow: hidden;
+/*   overflow: scroll; */
+/*   overflow-y: scroll; */
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Cascading and Specificity</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cascading and Specificity</title>
+</head>
+
+<body>
+  <style>
+    h1 {
+      color: red;
+    }
+
+    h1 {
+      color: blue;
+    }
+
+    h2 {
+      color: purple;
+    }
+
+    .more-specific {
+      color: yellow;
+    }
+  </style>
+
+  <h1>Hello World!</h1>
+
+  <h2 style="color: brown;">I love GIS!</h2>
+
+  <h2 class="more-specific">I have a specific class</h2>
+</body>
+
+</html>
+<!-- partial -->
+  
+</body>
+</html>

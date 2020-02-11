@@ -1,0 +1,15 @@
+p {
+  border: 2px solid rebeccapurple;
+  padding: 0.5em;
+}
+
+.inline {
+  display: inline;
+  border: 2px solid blue;
+  padding: 0.5em;
+}
+
+#my-block-span {
+  display: block;
+  border: 2px solid green;
+}
