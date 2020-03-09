@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lab 5</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+
+    <!-- load in google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Anton|Roboto&display=swap" rel="stylesheet" />
+
+    <!-- Add in Leaflet -->
+    <!-- Load Leaflet from CDN -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin=""></script>
+
+    <!-- Load Esri Leaflet from CDN -->
+    <script src="https://unpkg.com/esri-leaflet@2.2.4/dist/esri-leaflet.js" integrity="sha512-tyPum7h2h36X52O2gz+Pe8z/3l+Y9S1yEUscbVs5r5aEY5dFmP1WWRY/WLLElnFHa+k1JBQZSCDGwEAnm2IxAQ==" crossorigin=""></script>
+
+
+</head>
+
+<body>
+    <div class="app-container">
+        <div class="navbar">
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Tricolour_Cockade.svg/1200px-Tricolour_Cockade.svg.png" alt="logo"></a>
+            <div>U.S. 113th Congressional Districts</div>
+            <div class="spacer"></div>
+            <a href="#">Home</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+            <a href="#" onclick="openMenu();"><img src="./assets/hamburger-button.png" alt="navigation-menu"></a>
+        </div>
+
+
+        <div class="sidepane">
+            <!--added-->
+            <a class="close-button" onclick="closeSidepane();"><img src="./assets/close-button.png" alt="close button"></a>
+            <hr>
+            <div>
+                <img id="sidepane-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/Capitol_at_Dusk_2.jpg/1280px-Capitol_at_Dusk_2.jpg" />
+            </div>
+            <div class="sidepane-content">
+                The <strong>One Hundred Thirteenth United States Congress</strong> was
+                a meeting of the legislative branch of the United States federal
+                government, from January 3, 2013, to January 3, 2015, during the fifth
+                and sixth years of Barack Obama's presidency. It was composed of the
+                United States Senate and the United States House of Representatives
+                based on the results of the 2012 Senate elections and the 2012 House
+                elections. The seats in the House were apportioned based on the 2010
+                United States Census. It first met in Washington, D.C. on January 3,
+                2013, and it ended on January 3, 2015. Senators elected to regular
+                terms in 2008 were in the last two years of those terms during this
+                Congress.
+            </div>
+        </div>
+        <div class="map">
+            <!-- map to be filled with js -->
+            <div id="map"></div>
+        </div>
+        <div class="legend"></div>
+        <div class="legend-icon"> <img src="./assets/legend-icon.png" alt="legend"> </div>
+        <!--added-->
+        <a class="info-button" onclick="openSidepane();"> <img src="./assets/info-button.png" alt="more info button"> </a>
+
+    </div>
+    <!--added-->
+    <script src="./js/map.js"></script>
+    <script src="./js/drawer.js"></script>
+    <!-- add the map.js script down here -->
+    <script src="./js/menu.js"></script>
+</body>
+
+</html>
